@@ -132,13 +132,17 @@ header {
     top: 3rem;
     z-index: 100;
 }
-.select-region p {
+.select-region ul {
+    display: grid;
+    gap: 3px;
+}
+.select-region li {
     text-transform: capitalize;
-    line-height: 2;
+    /* line-height: 2; */
     font-weight: 300;
     cursor: pointer;
 }
-.select-region p:hover {
+.select-region li:hover {
     font-size: 16px;
 }
 
@@ -154,6 +158,10 @@ header {
     background-color: var(--header-bg);
     display: grid;
     width: 100%;
+}
+a {
+    text-decoration: none;
+    color: white;
 }
 .flag{
     width: 100%;
